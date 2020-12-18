@@ -54,17 +54,21 @@
 
 
 var invitati = ["gatsby", "pippo", "pluto", "paperino"];
-
 var nome = prompt("inserisci in tuo nome");
+var messaggio = false;
 
-var check = invitati.includes(nome);
-
-
-if (check == true) {
-  document.getElementById('invitation').innerHTML = "Sei invitato";
-} else {
-  document.getElementById('invitation').innerHTML = "Non sei invitato";
+for (var i = 0; i < invitati.length; i++) {
+  if (nome == invitati[i]) {
+    messaggio = true;
+  }
 }
+
+if (messagio == true) {
+  console.log("invitato");
+} else {
+  console.log("non sei invitato");
+}
+
 
 
 
